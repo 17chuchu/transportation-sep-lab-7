@@ -14,19 +14,14 @@ class Transportation(object):
 
 
 class Walk( Transportation ):
-
+   # I just finish walking
    def __init__( self, start, end, distance ):
       Transportation.__init__( self, start, end, distance)
 
    def find_cost( self ):
       return 0
 
-class Taxi( Transportation ):
-   def __init__( self, start, end, distance) :
-      Transportation.__init__(self, start, end, distance)
 
-   def find_cost(self):
-      return self.distance*40.0
    
 # main program
 
